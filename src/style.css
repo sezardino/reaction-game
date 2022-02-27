@@ -13,7 +13,7 @@ body {
   align-items: center;
   padding: 20px;
   overflow: hidden;
-  background: linear-gradient(#CB356B, #BD3F32);
+  background: linear-gradient(#cb356b, #bd3f32);
 }
 
 .app {
@@ -21,7 +21,8 @@ body {
   padding: 20px;
   width: 600px;
   margin: 0 auto;
-  box-shadow: 0 1px 30px 0 rgba(0,0,0,0.14), 0 0px 0px 0 rgba(0,0,0,.12), 0 0px 0px 0px rgba(0,0,0,.3);
+  box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0 rgba(0, 0, 0, 0.12),
+    0 0px 0px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
@@ -55,8 +56,8 @@ body {
   max-width: 100%;
   margin-bottom: 3px;
   color: #acacac;
-  font-family: GothamPro,sans-serif;
-  font-size: .8rem;
+  font-family: GothamPro, sans-serif;
+  font-size: 0.8rem;
   font-weight: normal;
   line-height: 1.2rem;
 }
@@ -65,7 +66,7 @@ body {
   display: block;
   width: 100%;
   max-height: 2.8rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
@@ -78,9 +79,6 @@ body {
 
 .game {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 1px solid #ccc;
   background: #ccc;
   min-height: 300px;
@@ -89,8 +87,12 @@ body {
   max-height: 300px;
 }
 
+.game > div {
+  cursor: pointer;
+}
+
 .hide {
-  display: none!important;
+  display: none !important;
 }
 
 .btn {
@@ -113,24 +115,25 @@ body {
   color: #3f3f3f;
   border: none;
   border-radius: 2.8rem;
-  transition: transform .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-transform .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
   will-change: transform;
 }
 
 .btn:disabled {
-  background: #ccc!important;
+  background: #ccc !important;
   border: 1px solid #ccc;
   color: #000;
   cursor: not-allowed;
 }
 
 .btn:active {
-  transition: transform .1s ease-in-out,box-shadow .1s ease-in-out!important;
-  transform: none!important;
-  box-shadow: none!important;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .btn:hover {
-  box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
 }
